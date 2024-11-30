@@ -1,0 +1,159 @@
+/* src/index.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .color-button {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .color-button.red { background-color: red; }
+  .color-button.blue { background-color: blue; }
+  .color-button.green { background-color: green; }
+  .color-button.yellow { background-color: yellow; }
+  
+  .flash {
+    border: 5px solid white;
+  }
+  
+  .game-container {
+    text-align: center;
+  }
+.game-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allows buttons to wrap in smaller screens */
+}
+
+.color-button {
+  width: 100px;
+  height: 100px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.color-button.flash {
+  opacity: 1;
+}
+
+.red { background-color: red; }
+.blue { background-color: blue; }
+.green { background-color: green; }
+.yellow { background-color: yellow; }
+
+.game {
+  background-color: blue;
+  color: #f0f0f0;
+  padding: 7px 8px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.game:hover {
+  cursor: pointer;
+  background-color: green;
+  color: #f0f0f0;
+}
+
+/* Responsive styling */
+
+/* Small screens (max-width: 500px) */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
+    gap: 10px;
+    justify-items: center; /* Center buttons */
+  }
+
+  .color-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .game {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Medium screens (min-width: 500px and max-width: 800px) */
+@media (min-width: 500px) and (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+    gap: 15px;
+  }
+
+  .color-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .game {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Large screens (min-width: 800px) */
+@media (min-width: 800px) {
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .color-button {
+    width: 100px;
+    height: 100px;
+  }
+
+  .game {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+  }
+}
