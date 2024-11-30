@@ -1,3 +1,36 @@
+# Simon Says Game (React)
+
+The **Simon Says** game is a memory game where players must repeat sequences of colored lights and sounds. The sequence becomes progressively longer and more challenging as the player successfully repeats each round.
+
+This version of **Simon Says** is built using **React.js**, with CSS for styling and animations.
+
+## Demo
+
+![Simon Says Game Demo](image.png)
+
+## Features
+
+- **Color Sequences**: The game displays a sequence of colors that the player must repeat.
+- **Sound Effects**: Each color is associated with a sound, adding an auditory challenge to the game.
+- **Increasing Difficulty**: The sequence becomes longer and more challenging as you successfully repeat the pattern.
+- **Game Over and Reset**: If the player makes a mistake, the game ends and they can start again.
+
+## Technologies Used
+
+- **React.js**: A JavaScript library for building user interfaces, used for managing the game state, rendering the UI, and handling user interactions.
+- **CSS**: Styling and animations for the game interface, including button hover effects and color transitions.
+- **JavaScript**: The core language used to handle the game logic, such as sequence generation, user input handling, and game flow.
+- **HTML**: Used to structure the game's UI components and buttons.
+- **Audio**: Each color button in the game is associated with a sound effect, enhancing the user experience.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/simon-says-game.git
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
